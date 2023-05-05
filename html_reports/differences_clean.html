@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.sf3b2i {color: #ababab; background-color: #ffffff; }
+.sf3b5i {color: #005190; background-color: #0078d7; }
+.sf3b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf3b16i {color: #a19774; background-color: #f1e2ad; }
+.sf3b18i {color: #ab7257; background-color: #ffaa82; }
+.sf3b19i {color: #865749; background-color: #c8816c; }
+.sf6b2i {color: #ffffff; background-color: #ffffff; }
+.sf6b5i {color: #54a4e4; background-color: #0078d7; }
+.sf6b14i {color: #ffbfbf; background-color: #ffa0a0; }
+.sf6b16i {color: #f5ebc8; background-color: #f1e2ad; }
+.sf6b18i {color: #ffc6ab; background-color: #ffaa82; }
+.sf6b19i {color: #daaa9c; background-color: #c8816c; }
+.sf7b2i {color: #ababff; background-color: #ffffff; font-weight: bold; }
+.sf7b5i {color: #0051e4; background-color: #0078d7; font-weight: bold; }
+.sf7b14i {color: #ab6bbf; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16i {color: #a197c8; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18i {color: #ab72ab; background-color: #ffaa82; font-weight: bold; }
+.sf7b19i {color: #86579c; background-color: #c8816c; font-weight: bold; }
+.sf8b2i {color: #d5abd5; background-color: #ffffff; }
+.sf8b5i {color: #2a51bb; background-color: #0078d7; }
+.sf8b14i {color: #d56b96; background-color: #ffa0a0; }
+.sf8b16i {color: #cc979f; background-color: #f1e2ad; }
+.sf8b18i {color: #d57282; background-color: #ffaa82; }
+.sf8b19i {color: #b15772; background-color: #c8816c; }
+.sf9b2i {color: #abd5ab; background-color: #ffffff; }
+.sf9b5i {color: #007a90; background-color: #0078d7; }
+.sf9b14i {color: #ab966b; background-color: #ffa0a0; }
+.sf9b16i {color: #a1c274; background-color: #f1e2ad; }
+.sf9b18i {color: #ab9d57; background-color: #ffaa82; }
+.sf9b19i {color: #868149; background-color: #c8816c; }
+.sf10b2i {color: #ffabab; background-color: #ffffff; }
+.sf10b5i {color: #545190; background-color: #0078d7; }
+.sf10b14i {color: #ff6b6b; background-color: #ffa0a0; }
+.sf10b16i {color: #f59774; background-color: #f1e2ad; }
+.sf10b18i {color: #ff7257; background-color: #ffaa82; }
+.sf10b19i {color: #da5749; background-color: #c8816c; }
+.sf11b2i {color: #cbcbcb; background-color: #ffffff; }
+.sf11b5i {color: #1f71b0; background-color: #0078d7; }
+.sf11b14i {color: #cb8b8b; background-color: #ffa0a0; }
+.sf11b16i {color: #c1b794; background-color: #f1e2ad; }
+.sf11b18i {color: #cb9277; background-color: #ffaa82; }
+.sf11b19i {color: #a67769; background-color: #c8816c; }
+.sf12b2i {color: #d5abab; background-color: #ffffff; }
+.sf12b5i {color: #2a5190; background-color: #0078d7; }
+.sf12b14i {color: #d56b6b; background-color: #ffa0a0; }
+.sf12b16i {color: #cc9774; background-color: #f1e2ad; }
+.sf12b18i {color: #d57257; background-color: #ffaa82; }
+.sf12b19i {color: #b15749; background-color: #c8816c; }
+.sf13b2i {color: #abd5eb; background-color: #ffffff; }
+.sf13b5i {color: #007ad0; background-color: #0078d7; }
+.sf13b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf13b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf13b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf13b19i {color: #868187; background-color: #c8816c; }
+.sf15b2i {color: #ababab; background-color: #ffffff; }
+.sf15b5i {color: #005190; background-color: #0078d7; }
+.sf15b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf15b16i {color: #a19774; background-color: #f1e2ad; }
+.sf15b18i {color: #ab7257; background-color: #ffaa82; }
+.sf15b19i {color: #865749; background-color: #c8816c; }
+.sf17b2i {color: #ababab; background-color: #ffffff; }
+.sf17b5i {color: #005190; background-color: #0078d7; }
+.sf17b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf17b16i {color: #a19774; background-color: #f1e2ad; }
+.sf17b18i {color: #ab7257; background-color: #ffaa82; }
+.sf17b19i {color: #865749; background-color: #c8816c; }
+.sf20b2i {color: #ababd5; background-color: #ffffff; }
+.sf20b5i {color: #0051bb; background-color: #0078d7; }
+.sf20b14i {color: #ab6b96; background-color: #ffa0a0; }
+.sf20b16i {color: #a1979f; background-color: #f1e2ad; }
+.sf20b18i {color: #ab7282; background-color: #ffaa82; }
+.sf20b19i {color: #865772; background-color: #c8816c; }
+.sf21b2i {color: #abd5eb; background-color: #ffffff; }
+.sf21b5i {color: #007ad0; background-color: #0078d7; }
+.sf21b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf21b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf21b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf21b19i {color: #868187; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<colgroup>
+<col style="width: 0.5em;" />
+<col style="width: calc(100vw / 2 - 0.5em);" />
+<col style="width: 0.5em;" />
+<col style="width: calc(100vw / 2 - 0.5em);" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" class="title">D:\Toegepaste_informatica_G2\Bachelorproef\hashfiles\hash-2023-04-28-07-31.csv</th>
+<th colspan="2" class="title">D:\Toegepaste_informatica_G2\Bachelorproef\hashfiles\hash-2023-04-28-08-45.csv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\ztrace_maps.dll","<wbr></span><span class="sf17b16">355912A706861F396D126B797ABDDA5F</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\ztrace_maps.dll","<wbr></span><span class="sf17b16">2713E24B95310CC9AD9B98D431F923B2</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{138B6452-1752-44B3-A970-7E72035F331<wbr>F}.checkpoint","1D55E014ACAA015E020F717<wbr>F5FCABF68"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{15B1E7A3-335A-4AC3-B4BA-B3F18755831<wbr>E}.checkpoint","</span><span class="sf17b16">89809E82B84103A139BB853<wbr>CFAFF1F64</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{15B1E7A3-335A-4AC3-B4BA-B3F18755831<wbr>E}.checkpoint","</span><span class="sf17b16">60BF76DE0DD6083CEC93C95<wbr>40FA878C6</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{23A3179F-B591-4749-A679-0EC73B23C01<wbr>3}.checkpoint","7072DBA44892204B76BBB52<wbr>0131BA521"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{2A2491D9-FB5C-42D9-B37F-5A33E63451C<wbr>B}.checkpoint","</span><span class="sf17b16">F84E72C9F654FF0E8283568<wbr>8DE7E0C47</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{2A2491D9-FB5C-42D9-B37F-5A33E63451C<wbr>B}.checkpoint","</span><span class="sf17b16">E8B85093F4BC164C526D825<wbr>B99CF122C</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{3602F9C3-4025-4749-A9EC-29A126DBBDA<wbr>9}.checkpoint","53526DD661327B72A36AD5C<wbr>F1F14E44F"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{371EA08D-8C74-4756-92E8-976DE44AE92<wbr>A}.checkpoint","4156078621DBC59027A88C0<wbr>B76A96E79"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{3F94DF64-2F91-4C35-B29B-535142366BB<wbr>4}.checkpoint","FA66DB0D3FF7088F3F64D2A<wbr>13FCA00DE"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{40D3589F-C10B-486D-BA9D-1449885250D<wbr>1}.checkpoint","</span><span class="sf17b16">3AB331701C363D899CBA58A<wbr>0BD13851C</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{40D3589F-C10B-486D-BA9D-1449885250D<wbr>1}.checkpoint","</span><span class="sf17b16">EC8635AD952C21626C3EE5B<wbr>533ED38E6</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{4293E1A1-702D-4070-BEC1-AA086D0EF4C<wbr>3}.checkpoint","</span><span class="sf17b16">B045585BF32CE439E5AD373<wbr>6CC931D4</span><span style="color: #000000; background-color: #efcb05; ">A"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{4293E1A1-702D-4070-BEC1-AA086D0EF4C<wbr>3}.checkpoint","</span><span class="sf17b16">A5510C955471934B362601E<wbr>3967339C</span><span style="color: #000000; background-color: #efcb05; ">A"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{4F6808B2-D58C-4D6B-85CE-86707C6CE00<wbr>2}.checkpoint","F46FFC91899FD206A16BF49<wbr>228B06D4A"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{5ABECD85-5E34-41CA-96AC-5B0EA9FEEAF<wbr>A}.checkpoint","</span><span class="sf17b16">9C23BB54D326057352A4ABF<wbr>28A53A52F</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{5ABECD85-5E34-41CA-96AC-5B0EA9FEEAF<wbr>A}.checkpoint","</span><span class="sf17b16">735F9456604DE623096DEFC<wbr>F6507F723</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{613728C3-350B-4EB7-A299-CE979F2B3C3<wbr>9}.checkpoint","11136ED83CB525735865528<wbr>662929404"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{8840B3D6-C650-4F25-9B91-324DF7B3B96<wbr>A}.checkpoint","26AEA00B9730DF0E9AF22F9<wbr>407F54F39"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{8CDACF2E-A519-4160-AADD-7BF46748D64<wbr>9}.checkpoint","4AF46A7039C379F4AEF5318<wbr>3F9A55108"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{A214A91B-6EFD-47D6-BEBE-2E03852F629<wbr>C}.checkpoint","</span><span class="sf17b16">6D3B9B8201D64EFB74BA497<wbr>86D35B5F1</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{A214A91B-6EFD-47D6-BEBE-2E03852F629<wbr>C}.checkpoint","</span><span class="sf17b16">A1025317DAC37212F7BC507<wbr>389AC98A0</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{A48417B1-E333-4585-BACF-F642A42F670<wbr>9}.checkpoint","E1E0E111DD2C76155F3A829<wbr>A56901D30"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{C6FE4354-76ED-44AD-8755-2BF826D3F30<wbr>D}.checkpoint","</span><span class="sf17b16">62A60F76C820975327DDC9E<wbr>28EBFBEF6</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{C6FE4354-76ED-44AD-8755-2BF826D3F30<wbr>D}.checkpoint","</span><span class="sf17b16">E58FE5EB8BF72A207EA6250<wbr>68F37F6BB</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{D0F5088D-6122-42B6-A054-62EA02E2934<wbr>7}.checkpoint","6AB2FF80FCA29D14F7422FB<wbr>1904E08E1"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{E</span><span class="sf17b16">300D5B5</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">A479</span><span style="color: #000000; background-color: #efcb05; ">-4</span><span class="sf17b16">BC2</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">ABD4</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">8D1080DEB1B<wbr>5</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">CCBA07554CF015194003F2B<wbr>6F578A79F</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{E</span><span class="sf17b16">5235FC2</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">100A</span><span style="color: #000000; background-color: #efcb05; ">-4</span><span class="sf17b16">945</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">95A8</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">4778EBF2ADB<wbr>2</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">0E215BD27755E0626E586EA<wbr>BC043A04D</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{E5235FC2-100A-4945-95A8-4778EBF2ADB<wbr>2}.checkpoint","E31817C1FBDBA3C640F0F4B<wbr>9ED0532C4"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F2</span><span class="sf17b16">698363</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">CDA0</span><span style="color: #000000; background-color: #efcb05; ">-4</span><span class="sf17b16">A2D</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">BC2</span><span style="color: #000000; background-color: #efcb05; ">B-</span><span class="sf17b16">65073E4D386<wbr>0</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">9169AD75933ADC012712A7A<wbr>5F7A54513</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F2</span><span class="sf17b16">9FEEB4</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">EF48</span><span style="color: #000000; background-color: #efcb05; ">-4</span><span class="sf17b16">6C1</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">A58</span><span style="color: #000000; background-color: #efcb05; ">B-</span><span class="sf17b16">A245D11DF9F<wbr>D</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">FE2A8398A3ED69F65A89DFE<wbr>A6082BEA8</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F</span><span class="sf17b16">29FEEB4</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">EF48</span><span style="color: #000000; background-color: #efcb05; ">-46</span><span class="sf17b16">C1</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">A58</span><span style="color: #000000; background-color: #efcb05; ">B-</span><span class="sf17b16">A245D11DF9F<wbr>D</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">AC8848DFAB1A378782CD2E2<wbr>3B9F8BEE9</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F</span><span class="sf17b16">3C30262</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">7445</span><span style="color: #000000; background-color: #efcb05; ">-46</span><span class="sf17b16">73</span><span style="color: #000000; background-color: #efcb05; ">-</span><span class="sf17b16">98D</span><span style="color: #000000; background-color: #efcb05; ">B-</span><span class="sf17b16">E51FD4616AB<wbr>F</span><span style="color: #000000; background-color: #efcb05; ">}.checkpoint","</span><span class="sf17b16">1A40740CC4F7466FA672B7C<wbr>E50F4842E</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F3C30262-7445-4673-98DB-E51FD4616AB<wbr>F}.checkpoint","1C71177C2BD46A47957CC78<wbr>06B080FE1"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\InstallServi<wbr>ce\{F4D61E82-67AB-4972-BB1D-8425FD2B30B<wbr>2}.checkpoint","D699C172F137153F346F012<wbr>8CE1C5CFF"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\Local\Microsoft\Windows\Powe<wbr>rShell\ModuleAnalysisCache","8B64B76AE0<wbr>3DA07E5055F3FD5C953B09"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\57C8EDB95DF3F0AD4EE2DC<wbr>2B8CFD4157","</span><span class="sf17b16">CFE7F65CB5B4C3A245AD701062<wbr>79824C</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\57C8EDB95DF3F0AD4EE2DC<wbr>2B8CFD4157","</span><span class="sf17b16">5BA14ABEB1C434C1AB548516E1<wbr>B142A6</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\77EC63BDA74BD0D0E0426D<wbr>C8F8008506","</span><span class="sf17b16">DAB386427750FF0979D757C11D<wbr>598968</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\77EC63BDA74BD0D0E0426D<wbr>C8F8008506","</span><span class="sf17b16">24F08AFA7AF25B580A421DC864<wbr>8C54AA</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\FB0D848F74F70BB2EAA937<wbr>46D24D9749","</span><span class="sf17b16">2CC5F1C5661895F6291D6D9017<wbr>32C15D</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\config\systemprofi<wbr>le\AppData\LocalLow\Microsoft\CryptnetU<wbr>rlCache\MetaData\FB0D848F74F70BB2EAA937<wbr>46D24D9749","</span><span class="sf17b16">8FFA96A3844384ED0F4FF5BC27<wbr>FD5016</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\malware\malware.tx<wbr>t","D41D8CD98F00B204E9800998ECF8427E"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\spool\V4Dirs\718BD<wbr>178-1FEE-468D-8CEB-2715BCB2BF2B\5b120a2<wbr>4.BUD","4B9C99CBA7E22E898A39FA5914E67FD<wbr>C"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\spool\V4Dirs\718BD<wbr>178-1FEE-468D-8CEB-2715BCB2BF2B\5b120a2<wbr>4.gpd","69B2C64DC2F4744CE17F181B91D061B<wbr>B"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\spool\V4Dirs\718BD<wbr>178-1FEE-468D-8CEB-2715BCB2BF2B\pdc.xml<wbr>","DE26F8CACC3E2D052EE92BADEDE44701"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\spp\store\2.0\cach<wbr>e\cache.dat","</span><span class="sf17b16">8E275FA233B6BA5108026AA32<wbr>DC0798F</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\spp\store\2.0\cach<wbr>e\cache.dat","</span><span class="sf17b16">30609E4BE30D8EAD6C46C610E<wbr>99F057E</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\Tasks\Microsoft\Wi<wbr>ndows\Flighting\OneSettings\RefreshCach<wbr>e","</span><span class="sf17b16">6250475C4418615448E22E5A74DBEE35</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\Tasks\Microsoft\Wi<wbr>ndows\Flighting\OneSettings\RefreshCach<wbr>e","</span><span class="sf17b16">CECBC369638664659FC1ED83D2FD2A97</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"><a name="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\Tasks\Microsoft\Wi<wbr>ndows\SoftwareProtectionPlatform\SvcRes<wbr>tartTask","</span><span class="sf17b16">903F7D43BFFDEE4180262F17BB8A<wbr>9EB2</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">"C:\Windows\System32\Tasks\Microsoft\Wi<wbr>ndows\SoftwareProtectionPlatform\SvcRes<wbr>tartTask","</span><span class="sf17b16">A5A8E9034717A5AF0741E10651F3<wbr>F737</span><span style="color: #000000; background-color: #efcb05; ">"</span></code></td>
+</tr>
+<tr height=1><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td><td style="background-color: black"></td></tr>
+<tr>
+<td class="ln"></td><td></td>
+<td class="ln"></td><td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
